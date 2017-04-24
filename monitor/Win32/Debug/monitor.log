@@ -1,0 +1,225 @@
+﻿生成启动时间为 2017/4/24 22:01:43。
+     1>项目“D:\Code\monitor\monitor.vcxproj”在节点 2 上(Build 个目标)。
+     1>CustomBuild:
+         Moc'ing commset.h...
+         Moc'ing communication.h...
+         Moc'ing connectdb.h...
+         Moc'ing giswnd.h...
+         Moc'ing ledctl.h...
+         Moc'ing mainwindow.h...
+         Moc'ing menubar.h...
+         Moc'ing minewnd.h...
+         Moc'ing plotlines.h...
+         Moc'ing rtdatatablewnd.h...
+         Moc'ing rtwavewnd.h...
+         Moc'ing serialport.h...
+         Moc'ing statusbar.h...
+         Moc'ing testmap.h...
+         Moc'ing toolbar.h...
+         Moc'ing valuectl.h...
+         Moc'ing wellwnd.h...
+         Moc'ing widget.h...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_commset.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_commset.cpp, Release\moc_commset.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_communication.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_communication.cpp, Release\moc_communication.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_connectdb.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_connectdb.cpp, Release\moc_connectdb.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_giswnd.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_giswnd.cpp, Release\moc_giswnd.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_ledctl.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_ledctl.cpp, Release\moc_ledctl.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_mainwindow.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_mainwindow.cpp, Release\moc_mainwindow.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_menubar.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_menubar.cpp, Release\moc_menubar.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_minewnd.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_minewnd.cpp, Release\moc_minewnd.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_plotlines.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_plotlines.cpp, Release\moc_plotlines.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_rtdatatablewnd.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_rtdatatablewnd.cpp, Release\moc_rtdatatablewnd.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_rtwavewnd.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_rtwavewnd.cpp, Release\moc_rtwavewnd.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_serialport.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_serialport.cpp, Release\moc_serialport.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_statusbar.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_statusbar.cpp, Release\moc_statusbar.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_testmap.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_testmap.cpp, Release\moc_testmap.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_toolbar.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_toolbar.cpp, Release\moc_toolbar.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_valuectl.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_valuectl.cpp, Release\moc_valuectl.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_wellwnd.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_wellwnd.cpp, Release\moc_wellwnd.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_widget.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are Debug\moc_widget.cpp, Release\moc_widget.cpp.
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I. /ID:\Qt\Qt5.5.1\5.5\msvc2013/include/QWT /Iopmap /I..\..\qt\qt5.5.1\5.5\msvc2013\include /I..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets /I..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui /I..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE /I..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort /I..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql /I..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore /Idebug /I"..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013" /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D QWT_DLL /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_SERIALPORT_LIB /D QT_SQL_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt -w34100 -w34189 -w44996 Debug\moc_commset.cpp Debug\moc_communication.cpp Debug\moc_connectdb.cpp Debug\moc_giswnd.cpp Debug\moc_ledctl.cpp Debug\moc_mainwindow.cpp Debug\moc_menubar.cpp Debug\moc_minewnd.cpp Debug\moc_plotlines.cpp Debug\moc_rtdatatablewnd.cpp Debug\moc_rtwavewnd.cpp Debug\moc_serialport.cpp Debug\moc_statusbar.cpp Debug\moc_testmap.cpp Debug\moc_toolbar.cpp Debug\moc_valuectl.cpp Debug\moc_wellwnd.cpp Debug\moc_widget.cpp main.cpp
+         moc_commset.cpp
+         moc_communication.cpp
+     1>d:\code\monitor\modbus\modbus-tcp.h(29): warning C4005: “ECONNRESET”: 宏重定义
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\errno.h(100) : 参见“ECONNRESET”的前一个定义
+     1>d:\code\monitor\modbus\modbus-tcp.h(30): warning C4005: “ECONNREFUSED”: 宏重定义
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\errno.h(99) : 参见“ECONNREFUSED”的前一个定义
+     1>d:\code\monitor\modbus\modbus-tcp.h(31): warning C4005: “ETIMEDOUT”: 宏重定义
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\errno.h(130) : 参见“ETIMEDOUT”的前一个定义
+     1>d:\code\monitor\modbus\modbus-tcp.h(32): warning C4005: “ENOPROTOOPT”: 宏重定义
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\errno.h(115) : 参见“ENOPROTOOPT”的前一个定义
+         moc_connectdb.cpp
+         moc_giswnd.cpp
+         moc_ledctl.cpp
+         moc_mainwindow.cpp
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1293): warning C4005: “M_E”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(136) : 参见“M_E”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1294): warning C4005: “M_LOG2E”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(140) : 参见“M_LOG2E”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1295): warning C4005: “M_LOG10E”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(144) : 参见“M_LOG10E”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1296): warning C4005: “M_LN2”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(148) : 参见“M_LN2”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1297): warning C4005: “M_LN10”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(152) : 参见“M_LN10”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1298): warning C4005: “M_PI”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(156) : 参见“M_PI”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1299): warning C4005: “M_PI_2”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(160) : 参见“M_PI_2”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1300): warning C4005: “M_PI_4”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(164) : 参见“M_PI_4”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1301): warning C4005: “M_1_PI”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(168) : 参见“M_1_PI”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1302): warning C4005: “M_2_PI”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(172) : 参见“M_2_PI”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1303): warning C4005: “M_2_SQRTPI”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(176) : 参见“M_2_SQRTPI”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1304): warning C4005: “M_SQRT2”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(180) : 参见“M_SQRT2”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1305): warning C4005: “M_SQRT1_2”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(184) : 参见“M_SQRT1_2”的前一个定义
+     1>d:\code\monitor\plotlines.h(3): warning C4005: “QWT_DLL”: 宏重定义
+                 命令行参数: 参见前面的“QWT_DLL”定义
+     1>d:\code\monitor\modbus\modbus-tcp.h(29): warning C4005: “ECONNRESET”: 宏重定义
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\errno.h(100) : 参见“ECONNRESET”的前一个定义
+     1>d:\code\monitor\modbus\modbus-tcp.h(30): warning C4005: “ECONNREFUSED”: 宏重定义
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\errno.h(99) : 参见“ECONNREFUSED”的前一个定义
+     1>d:\code\monitor\modbus\modbus-tcp.h(31): warning C4005: “ETIMEDOUT”: 宏重定义
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\errno.h(130) : 参见“ETIMEDOUT”的前一个定义
+     1>d:\code\monitor\modbus\modbus-tcp.h(32): warning C4005: “ENOPROTOOPT”: 宏重定义
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\errno.h(115) : 参见“ENOPROTOOPT”的前一个定义
+         moc_menubar.cpp
+         moc_minewnd.cpp
+         moc_plotlines.cpp
+     1>d:\code\monitor\debug\../plotlines.h(3): warning C4005: “QWT_DLL”: 宏重定义
+                 命令行参数: 参见前面的“QWT_DLL”定义
+         moc_rtdatatablewnd.cpp
+         moc_rtwavewnd.cpp
+         moc_serialport.cpp
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\errno.h(99): warning C4005: “ECONNREFUSED”: 宏重定义
+                 d:\code\monitor\modbus\modbus-tcp.h(30) : 参见“ECONNREFUSED”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\errno.h(100): warning C4005: “ECONNRESET”: 宏重定义
+                 d:\code\monitor\modbus\modbus-tcp.h(29) : 参见“ECONNRESET”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\errno.h(115): warning C4005: “ENOPROTOOPT”: 宏重定义
+                 d:\code\monitor\modbus\modbus-tcp.h(32) : 参见“ENOPROTOOPT”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\errno.h(130): warning C4005: “ETIMEDOUT”: 宏重定义
+                 d:\code\monitor\modbus\modbus-tcp.h(31) : 参见“ETIMEDOUT”的前一个定义
+         moc_statusbar.cpp
+         moc_testmap.cpp
+         moc_toolbar.cpp
+         moc_valuectl.cpp
+         moc_wellwnd.cpp
+         moc_widget.cpp
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1293): warning C4005: “M_E”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(136) : 参见“M_E”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1294): warning C4005: “M_LOG2E”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(140) : 参见“M_LOG2E”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1295): warning C4005: “M_LOG10E”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(144) : 参见“M_LOG10E”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1296): warning C4005: “M_LN2”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(148) : 参见“M_LN2”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1297): warning C4005: “M_LN10”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(152) : 参见“M_LN10”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1298): warning C4005: “M_PI”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(156) : 参见“M_PI”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1299): warning C4005: “M_PI_2”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(160) : 参见“M_PI_2”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1300): warning C4005: “M_PI_4”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(164) : 参见“M_PI_4”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1301): warning C4005: “M_1_PI”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(168) : 参见“M_1_PI”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1302): warning C4005: “M_2_PI”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(172) : 参见“M_2_PI”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1303): warning C4005: “M_2_SQRTPI”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(176) : 参见“M_2_SQRTPI”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1304): warning C4005: “M_SQRT2”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(180) : 参见“M_SQRT2”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1305): warning C4005: “M_SQRT1_2”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(184) : 参见“M_SQRT1_2”的前一个定义
+     1>d:\code\monitor\plotlines.h(3): warning C4005: “QWT_DLL”: 宏重定义
+                 命令行参数: 参见前面的“QWT_DLL”定义
+         main.cpp
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1293): warning C4005: “M_E”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(136) : 参见“M_E”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1294): warning C4005: “M_LOG2E”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(140) : 参见“M_LOG2E”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1295): warning C4005: “M_LOG10E”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(144) : 参见“M_LOG10E”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1296): warning C4005: “M_LN2”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(148) : 参见“M_LN2”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1297): warning C4005: “M_LN10”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(152) : 参见“M_LN10”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1298): warning C4005: “M_PI”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(156) : 参见“M_PI”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1299): warning C4005: “M_PI_2”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(160) : 参见“M_PI_2”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1300): warning C4005: “M_PI_4”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(164) : 参见“M_PI_4”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1301): warning C4005: “M_1_PI”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(168) : 参见“M_1_PI”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1302): warning C4005: “M_2_PI”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(172) : 参见“M_2_PI”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1303): warning C4005: “M_2_SQRTPI”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(176) : 参见“M_2_SQRTPI”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1304): warning C4005: “M_SQRT2”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(180) : 参见“M_SQRT2”的前一个定义
+     1>D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(1305): warning C4005: “M_SQRT1_2”: 宏重定义
+                 D:\qt\qt5.5.1\5.5\msvc2013\include\QtCore\qmath.h(184) : 参见“M_SQRT1_2”的前一个定义
+     1>d:\code\monitor\plotlines.h(3): warning C4005: “QWT_DLL”: 宏重定义
+                 命令行参数: 参见前面的“QWT_DLL”定义
+     1>d:\code\monitor\modbus\modbus-tcp.h(29): warning C4005: “ECONNRESET”: 宏重定义
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\errno.h(100) : 参见“ECONNRESET”的前一个定义
+     1>d:\code\monitor\modbus\modbus-tcp.h(30): warning C4005: “ECONNREFUSED”: 宏重定义
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\errno.h(99) : 参见“ECONNREFUSED”的前一个定义
+     1>d:\code\monitor\modbus\modbus-tcp.h(31): warning C4005: “ETIMEDOUT”: 宏重定义
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\errno.h(130) : 参见“ETIMEDOUT”的前一个定义
+     1>d:\code\monitor\modbus\modbus-tcp.h(32): warning C4005: “ENOPROTOOPT”: 宏重定义
+                 D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\errno.h(115) : 参见“ENOPROTOOPT”的前一个定义
+         正在生成代码...
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"debug\\monitor.exe" /NOLOGO /LIBPATH:D:\qt\qt5.5.1\5.5\msvc2013\lib /LIBPATH:D:/qt/qt5.5.1/5.5/msvc2013/lib /LIBPATH:D:\Qt\Qt5.5.1\5.5\msvc2013\lib D:\qt\qt5.5.1\5.5\msvc2013\lib\qtmaind.lib shell32.lib D:/qt/qt5.5.1/5.5/msvc2013/lib\Qt5Cored.lib qwtd.lib opmap/SDKlib/debug/opmapwidget.lib modbus/lib/debug/libModbus3.0.6.lib D:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5Widgetsd.lib D:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5Guid.lib D:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5SerialPortd.lib D:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5Sqld.lib D:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5Cored.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\monitor.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /SAFESEH "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" Win32\Debug\commset.obj
+         Win32\Debug\communication.obj
+         Win32\Debug\connectdb.obj
+         Win32\Debug\datamanager.obj
+         Win32\Debug\moc_commset.obj
+         Win32\Debug\moc_communication.obj
+         Win32\Debug\moc_connectdb.obj
+         Win32\Debug\moc_giswnd.obj
+         Win32\Debug\moc_ledctl.obj
+         Win32\Debug\moc_mainwindow.obj
+         Win32\Debug\moc_menubar.obj
+         Win32\Debug\moc_minewnd.obj
+         Win32\Debug\moc_plotlines.obj
+         Win32\Debug\moc_rtdatatablewnd.obj
+         Win32\Debug\moc_rtwavewnd.obj
+         Win32\Debug\moc_serialport.obj
+         Win32\Debug\moc_statusbar.obj
+         Win32\Debug\moc_testmap.obj
+         Win32\Debug\moc_toolbar.obj
+         Win32\Debug\moc_valuectl.obj
+         Win32\Debug\moc_wellwnd.obj
+         Win32\Debug\moc_widget.obj
+         Win32\Debug\giswnd.obj
+         Win32\Debug\ledctl.obj
+         Win32\Debug\main.obj
+         Win32\Debug\mainwindow.obj
+         Win32\Debug\menubar.obj
+         Win32\Debug\minewnd.obj
+         Win32\Debug\plotlines.obj
+         Win32\Debug\rtdatatablewnd.obj
+         Win32\Debug\rtwavewnd.obj
+         Win32\Debug\scrolltabctl.obj
+         Win32\Debug\serialport.obj
+         Win32\Debug\statusbar.obj
+         Win32\Debug\testmap.obj
+         Win32\Debug\toolbar.obj
+         Win32\Debug\valuectl.obj
+         Win32\Debug\wellwnd.obj
+         Win32\Debug\widget.obj
+         monitor.vcxproj -> D:\Code\monitor\debug\monitor.exe
+     1>已完成生成项目“D:\Code\monitor\monitor.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:40.34

@@ -1,0 +1,645 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BB003D7D-9308-333A-BB21-01AB5CF03325}</ProjectGuid>
+    <RootNamespace>monitor</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>monitor</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>monitor</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">monitor</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">monitor</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;$(QTDIR)/include/QWT;opmap;..\..\qt\qt5.5.1\5.5\msvc2013\include;..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets;..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui;..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE;..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort;..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql;..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore;release;..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QWT_DLL;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SERIALPORT_LIB;QT_SQL_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\qt\qt5.5.1\5.5\msvc2013\lib\qtmain.lib;shell32.lib;D:/qt/qt5.5.1/5.5/msvc2013/lib\Qt5Core.lib;qwt.lib;opmap/SDKlib/release/opmapwidget.lib;modbus/lib/release/libModbus3.0.6.lib;D:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5Widgets.lib;D:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5Gui.lib;D:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5SerialPort.lib;D:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5Sql.lib;D:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\qt\qt5.5.1\5.5\msvc2013\lib;D:/qt/qt5.5.1/5.5/msvc2013/lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\monitor.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QWT_DLL;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SERIALPORT_LIB;QT_SQL_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;$(QTDIR)/include/QWT;opmap;..\..\qt\qt5.5.1\5.5\msvc2013\include;..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets;..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui;..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE;..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort;..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql;..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore;debug;..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QWT_DLL;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SERIALPORT_LIB;QT_SQL_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\qt\qt5.5.1\5.5\msvc2013\lib\qtmaind.lib;shell32.lib;D:/qt/qt5.5.1/5.5/msvc2013/lib\Qt5Cored.lib;qwtd.lib;opmap/SDKlib/debug/opmapwidget.lib;modbus/lib/debug/libModbus3.0.6.lib;D:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5Widgetsd.lib;D:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5Guid.lib;D:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5SerialPortd.lib;D:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5Sqld.lib;D:\qt\qt5.5.1\5.5\msvc2013\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\qt\qt5.5.1\5.5\msvc2013\lib;D:/qt/qt5.5.1/5.5/msvc2013/lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\monitor.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;QWT_DLL;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SERIALPORT_LIB;QT_SQL_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="commset.cpp" />
+    <ClCompile Include="communication.cpp" />
+    <ClCompile Include="connectdb.cpp" />
+    <ClCompile Include="datamanager.cpp" />
+    <ClCompile Include="Debug\moc_commset.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_communication.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_connectdb.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_giswnd.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_ledctl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_menubar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_minewnd.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_plotlines.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_rtdatatablewnd.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_rtwavewnd.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_serialport.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_statusbar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_testmap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_toolbar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_valuectl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_wellwnd.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_widget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="giswnd.cpp" />
+    <ClCompile Include="ledctl.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="menubar.cpp" />
+    <ClCompile Include="minewnd.cpp" />
+    <ClCompile Include="plotlines.cpp" />
+    <ClCompile Include="Release\moc_commset.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_communication.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_connectdb.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_giswnd.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_ledctl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_menubar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_minewnd.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_plotlines.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_rtdatatablewnd.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_rtwavewnd.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_serialport.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_statusbar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_testmap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_toolbar.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_valuectl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_wellwnd.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_widget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="rtdatatablewnd.cpp" />
+    <ClCompile Include="rtwavewnd.cpp" />
+    <ClCompile Include="scrolltabctl.cpp" />
+    <ClCompile Include="serialport.cpp" />
+    <ClCompile Include="statusbar.cpp" />
+    <ClCompile Include="testmap.cpp" />
+    <ClCompile Include="toolbar.cpp" />
+    <ClCompile Include="valuectl.cpp" />
+    <ClCompile Include="wellwnd.cpp" />
+    <ClCompile Include="widget.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="commset.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\release" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing commset.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\debug" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing commset.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="communication.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\release" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing communication.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\debug" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing communication.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="connectdb.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\release" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing connectdb.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\debug" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing connectdb.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="datamanager.h" />
+    <CustomBuild Include="giswnd.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\release" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing giswnd.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\debug" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing giswnd.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="ledctl.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\release" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ledctl.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\debug" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ledctl.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\release" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing mainwindow.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\debug" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing mainwindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="menubar.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\release" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing menubar.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\debug" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing menubar.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="minewnd.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\release" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing minewnd.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\debug" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing minewnd.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="modbus\modbus.h" />
+    <CustomBuild Include="plotlines.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\release" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing plotlines.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\debug" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing plotlines.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="rtdatatablewnd.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\release" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing rtdatatablewnd.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\debug" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing rtdatatablewnd.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="rtwavewnd.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\release" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing rtwavewnd.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\debug" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing rtwavewnd.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="scrolltabctl.h" />
+    <CustomBuild Include="serialport.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\release" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing serialport.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\debug" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing serialport.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="statusbar.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\release" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing statusbar.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\debug" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing statusbar.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="testmap.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\release" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing testmap.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\debug" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing testmap.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="toolbar.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\release" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing toolbar.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\debug" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing toolbar.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="valuectl.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\release" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing valuectl.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\debug" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing valuectl.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="wellwnd.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\release" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing wellwnd.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\debug" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing wellwnd.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="widget.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\release" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing widget.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+if errorlevel 1 goto VCEnd
+
+if errorlevel 1 goto VCEnd
+endlocal
+"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DQWT_DLL -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SERIALPORT_LIB -DQT_SQL_LIB -DQT_CORE_LIB "-I." "-I$(QTDIR)\include\QWT" "-I.\opmap" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtWidgets" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtGui" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtANGLE" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSerialPort" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtSql" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\include\QtCore" "-I.\debug" "-I.\..\..\qt\qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing widget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="language_cn.ts" />
+    <None Include="language_en.ts" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" Qt5Version_x0020_Win32="msvc2013" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

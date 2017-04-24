@@ -1,0 +1,10 @@
+QMainWindow{background-color: rgb(65, 65, 65);}
+QMenuBar::item {background-color: rgb(65, 65, 65);}
+QMenuBar::item:selected {background: #a8a8a8;}
+QMenu::item:selected {background-color: #a8a8a8;}
+QWidget{background-color: rgb(65, 65, 65);color: white; font: 12pt;}
+QTableCornerButton::section{background-color: rgb(65, 65, 65);}
+QHeaderView::section{background-color: rgb(65, 65, 65);} 
+QTabBar:tab{background-color: rgb(65, 65, 65);}
+QTabBar::tab:selected {background-color: #a8a8a8;}
+
