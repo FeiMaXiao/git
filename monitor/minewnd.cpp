@@ -126,6 +126,7 @@ MineWnd::MineWnd(unsigned char id, QString title, QWidget *parent) : QWidget(par
 
 	connect(m_pStartStop, SIGNAL(clicked()), this, SLOT(slot_startStop()));
 	connect(m_pTelecontrol, SIGNAL(clicked()), this, SLOT(slot_telecontrol()));
+	connect(m_pTitle, SIGNAL(stateChanged(int)), this, SIGNAL(checkBoxCahanged(int)));
 }
 
 MineWnd::~MineWnd()
