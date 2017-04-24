@@ -57,7 +57,7 @@ public:
 	void setLed(Led led, bool bl);
 
 signals:
-
+	void checkBoxCahanged(int);
 public slots:
     void slot_telecontrol();
     void slot_startStop();

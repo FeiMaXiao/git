@@ -68,7 +68,7 @@ MineWnd::MineWnd(unsigned char id, QString title, QWidget *parent) : QWidget(par
 	m_pPumpHitchImage->setPixmap(QPixmap("./image/green.png"));
 	m_pPumpAlarmImage->setPixmap(QPixmap("./image/green.png"));
 
-	m_pTelecontrol = new QPushButton(tr("Tele Allow"));
+	m_pTelecontrol = new QPushButton(tr("Tele Allow"));	
 	m_pStartStop = new QPushButton(tr("Pump Start"));
 
 	m_pGroupBox = new QGroupBox;
